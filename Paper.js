@@ -5,10 +5,10 @@ class Paper{
           isStatic:false,
           restituion:0.3,
           friction:0.5,
-          density:0.2
+          density:12
       }
 
-      this.body = Matter.Bodies.circle(x,y,radius,options);
+      this.body = Matter.Bodies.circle(x,y,radius/2,options);
       this.radius = radius;
 
       World.add(world,this.body);

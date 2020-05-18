@@ -16,13 +16,13 @@ function setup() {
 	world = engine.world;
 	Engine.run(engine);
 
-	paper = new Paper(300,600,10);
+	paper = new Paper(150,600,30);
 	
 	ground = new Ground(400,690,800,10);
 
-	dustbin_bottom = new Dustbin(600,640,200,20);
-  dustbin_left = new Dustbin(500,20,100,20);
-  dustbin_right = new Dustbin(700,600,20,100);
+	dustbin_bottom = new Dustbin(600,680,200,20);
+  dustbin_left = new Dustbin(500,625,20,130);
+  dustbin_right = new Dustbin(700,625,20,130);
 
 
 }
@@ -51,7 +51,7 @@ function keyPressed(){
 
   if(keyCode === UP_ARROW){
 
-   Matter.Body.applyForce(paper.body,paper.body.position,{x:85,y:-85});
+   Matter.Body.applyForce(paper.body,paper.body.position,{x:50,y:-50});
 
   }
 }
